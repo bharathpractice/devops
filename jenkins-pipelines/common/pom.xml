@@ -1,50 +1,22 @@
-<project
-    xmlns="http://maven.apache.org/POM/4.0.0"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-    <modelVersion>4.0.0</modelVersion>
-    <groupId>cd.serv_name</groupId>
-    <artifactId>serv_name</artifactId>
-    <version>3.4.1</version>
-    <name>serv_name-pipelines</name>
-    <packaging>pom</packaging>
-	
-	 <properties>
-        <common.version>3.4.1</common.version>
-    </properties>
-	
-    <dependencies>
-        <dependency>
-            <groupId>cd.common</groupId>
-            <artifactId>common-pipelines</artifactId>
-            <version>${common.version}</version>
-            <type>tar.gz</type>
-        </dependency>
-    </dependencies>
-    <build>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>cd.common</groupId>
+  <artifactId>common-pipelines</artifactId>
+
+  <version>3.4.1</version>
+
+  <name>wppCommonPipelines</name>
+  <packaging>pom</packaging>
+        
+<build>
         <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-dependency-plugin</artifactId>
-                <executions>
-                    <execution>
-                        <id>copy-dependencies</id>
-                        <phase>prepare-package</phase>
-                        <goals>
-                            <goal>copy-dependencies</goal>
-                        </goals>
-                        <configuration>
-                            <outputDirectory>${project.build.directory}</outputDirectory>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
-            <plugin>
+                <plugin>
                 <artifactId>maven-antrun-plugin</artifactId>
                 <version>1.7</version>
                 <executions>
                     <execution>
-                        <id>avsig-pipelines</id>
+                        <id>wpp_common_pipelines</id>
                         <phase>package</phase>
                         <configuration>
                             <target>
@@ -55,10 +27,6 @@
                                 <exec executable="cp">
                                     <arg value="-R"/>
                                     <arg value="${project.basedir}/jobs"/>
-                                    <arg value="${project.build.directory}/package/"/>
-                                </exec>
-                                <exec executable="cp">
-                                    <arg value="${project.build.directory}/common-pipelines-${common.version}.tar.gz"/>
                                     <arg value="${project.build.directory}/package/"/>
                                 </exec>
                                 <tar destfile="${project.build.directory}/${project.artifactId}-${project.version}.tar" basedir="${project.build.directory}/package" />
@@ -93,13 +61,16 @@
                     </execution>
                 </executions>
             </plugin>
+
         </plugins>
-    </build>
-   
+</build>     
+
+
     <distributionManagement>
         <repository>
             <id>devops-releases</id>
             <url>http://13.232.197.160:8081/nexus/content/repositories/1.0.0/</url>
         </repository>
     </distributionManagement>
+
 </project>
