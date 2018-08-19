@@ -45,7 +45,7 @@
     "command": {
       "ps": "ps -ef"
     },
-    "ohai_time": 1534607755.5188496,
+    "ohai_time": 1534647896.523024,
     "filesystem": {
       "by_device": {
         "udev": {
@@ -100,12 +100,12 @@
         },
         "/dev/sda1": {
           "kb_size": "10188088",
-          "kb_used": "4738876",
-          "kb_available": "4908644",
+          "kb_used": "4739072",
+          "kb_available": "4908448",
           "percent_used": "50%",
           "total_inodes": "655360",
-          "inodes_used": "143813",
-          "inodes_available": "511547",
+          "inodes_used": "143855",
+          "inodes_available": "511505",
           "inodes_percent_used": "22%",
           "fs_type": "ext4",
           "mount_options": [
@@ -337,12 +337,12 @@
         },
         "/run": {
           "kb_size": "101604",
-          "kb_used": "11084",
-          "kb_available": "90520",
+          "kb_used": "11056",
+          "kb_available": "90548",
           "percent_used": "11%",
           "total_inodes": "127001",
-          "inodes_used": "656",
-          "inodes_available": "126345",
+          "inodes_used": "647",
+          "inodes_available": "126354",
           "inodes_percent_used": "1%",
           "fs_type": "tmpfs",
           "mount_options": [
@@ -359,12 +359,12 @@
         },
         "/": {
           "kb_size": "10188088",
-          "kb_used": "4738876",
-          "kb_available": "4908644",
+          "kb_used": "4739072",
+          "kb_available": "4908448",
           "percent_used": "50%",
           "total_inodes": "655360",
-          "inodes_used": "143813",
-          "inodes_available": "511547",
+          "inodes_used": "143855",
+          "inodes_available": "511505",
           "inodes_percent_used": "22%",
           "fs_type": "ext4",
           "mount_options": [
@@ -807,13 +807,13 @@
         "tmpfs,/run": {
           "device": "tmpfs",
           "kb_size": "101604",
-          "kb_used": "11084",
-          "kb_available": "90520",
+          "kb_used": "11056",
+          "kb_available": "90548",
           "percent_used": "11%",
           "mount": "/run",
           "total_inodes": "127001",
-          "inodes_used": "656",
-          "inodes_available": "126345",
+          "inodes_used": "647",
+          "inodes_available": "126354",
           "inodes_percent_used": "1%",
           "fs_type": "tmpfs",
           "mount_options": [
@@ -828,13 +828,13 @@
         "/dev/sda1,/": {
           "device": "/dev/sda1",
           "kb_size": "10188088",
-          "kb_used": "4738876",
-          "kb_available": "4908644",
+          "kb_used": "4739072",
+          "kb_available": "4908448",
           "percent_used": "50%",
           "mount": "/",
           "total_inodes": "655360",
-          "inodes_used": "143813",
-          "inodes_available": "511547",
+          "inodes_used": "143855",
+          "inodes_available": "511505",
           "inodes_percent_used": "22%",
           "fs_type": "ext4",
           "mount_options": [
@@ -1737,7 +1737,7 @@
           "state": "up",
           "arp": {
             "192.168.43.189": "f8:34:41:96:b8:10",
-            "192.168.43.1": "66:db:43:43:1f:36"
+            "192.168.43.1": "40:88:05:67:63:e4"
           },
           "routes": [
             {
@@ -1879,16 +1879,16 @@
           "lo": {
             "tx": {
               "queuelen": "1",
-              "bytes": "1633356",
-              "packets": "8411",
+              "bytes": "1835340",
+              "packets": "8991",
               "errors": "0",
               "drop": "0",
               "carrier": "0",
               "collisions": "0"
             },
             "rx": {
-              "bytes": "1633356",
-              "packets": "8411",
+              "bytes": "1835340",
+              "packets": "8991",
               "errors": "0",
               "drop": "0",
               "overrun": "0"
@@ -1897,16 +1897,16 @@
           "enp0s3": {
             "tx": {
               "queuelen": "1000",
-              "bytes": "18365686",
-              "packets": "237841",
+              "bytes": "18938279",
+              "packets": "241375",
               "errors": "0",
               "drop": "0",
               "carrier": "0",
               "collisions": "0"
             },
             "rx": {
-              "bytes": "725324046",
-              "packets": "554121",
+              "bytes": "725834891",
+              "packets": "559828",
               "errors": "0",
               "drop": "0",
               "overrun": "0"
@@ -2061,24 +2061,24 @@
         "surplus": "0"
       },
       "total": "1016012kB",
-      "free": "255428kB",
-      "available": "637644kB",
-      "buffers": "56292kB",
-      "cached": "440388kB",
-      "active": "492756kB",
-      "inactive": "138260kB",
-      "dirty": "80kB",
+      "free": "258740kB",
+      "available": "643044kB",
+      "buffers": "57296kB",
+      "cached": "441328kB",
+      "active": "491872kB",
+      "inactive": "136456kB",
+      "dirty": "44kB",
       "writeback": "0kB",
-      "anon_pages": "137984kB",
-      "mapped": "43060kB",
-      "slab": "94996kB",
-      "slab_reclaimable": "77800kB",
-      "slab_unreclaim": "17196kB",
-      "page_tables": "9104kB",
+      "anon_pages": "133364kB",
+      "mapped": "42176kB",
+      "slab": "95108kB",
+      "slab_reclaimable": "78028kB",
+      "slab_unreclaim": "17080kB",
+      "page_tables": "8544kB",
       "nfs_unstable": "0kB",
       "bounce": "0kB",
       "commit_limit": "508004kB",
-      "committed_as": "1407980kB",
+      "committed_as": "1392564kB",
       "vmalloc_total": "34359738367kB",
       "vmalloc_used": "0kB",
       "vmalloc_chunk": "0kB",
@@ -2099,10 +2099,10 @@
       "system": "vbox",
       "role": "guest"
     },
-    "uptime_seconds": 33648,
-    "uptime": "9 hours 20 minutes 48 seconds",
-    "idletime_seconds": 32805,
-    "idletime": "9 hours 06 minutes 45 seconds",
+    "uptime_seconds": 39153,
+    "uptime": "10 hours 52 minutes 33 seconds",
+    "idletime_seconds": 38274,
+    "idletime": "10 hours 37 minutes 54 seconds",
     "dmi": {
       "dmidecode_version": "3.0",
       "smbios_version": "2.5",
@@ -2303,7 +2303,7 @@
       "ULONG_MAX": 18446744073709551615,
       "USHRT_MAX": 65535,
       "WORD_BIT": 32,
-      "_AVPHYS_PAGES": 63847,
+      "_AVPHYS_PAGES": 64640,
       "_NPROCESSORS_CONF": 1,
       "_NPROCESSORS_ONLN": 1,
       "_PHYS_PAGES": 254003,
